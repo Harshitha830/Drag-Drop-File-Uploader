@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="upload-section">
+                <div class="drop-zone" id="dropZone">
+                    <div class="upload-icon">📁</div>
+                    <h3>Drag & Drop files here</h3>
+                    <p>Files will upload automatically</p>
+                    <input type="file" id="fileInput" multiple>
+                </div>
+                
+                <div class="file-preview" id="filePreview"></div>
+
+                
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill"></div>
+                </div>
+                
+                <div class="message" id="message"></div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="nav-tabs">
+                    <button class="tab-btn active" data-tab="uploaded">Uploaded Files</button>
+                    <button class="tab-btn" data-tab="shared">Shared Files</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-panel active" id="uploaded-panel">
+                        <div class="files-list" id="uploadedFilesList"></div>
+                    </div>
+                    <div class="tab-panel" id="shared-panel">
+                        <div class="files-list" id="sharedFilesList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
